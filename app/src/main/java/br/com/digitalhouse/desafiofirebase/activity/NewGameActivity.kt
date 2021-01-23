@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.viewModels
+import androidx.lifecycle.Observer
 import br.com.digitalhouse.desafiofirebase.R
 import br.com.digitalhouse.desafiofirebase.domain.Game
 import com.google.firebase.storage.FirebaseStorage
@@ -25,6 +27,8 @@ class NewGameActivity : AppCompatActivity() {
 
     private var imageUrl = ""
 
+    private val gameViewModel : GameViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_game)
@@ -39,8 +43,20 @@ class NewGameActivity : AppCompatActivity() {
                 inputAno.text.toString(),
                 imageUrl,
                 inputDescricao.text.toString())
-            // TODO: salva
+            gameViewModel.saveGame(game)
         }
+
+        gameViewModel.response.observe(this, Observer {
+            if (it == "Sucesso") {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            }
+        })
+
+        config()
+
     }
 
     fun config() {
