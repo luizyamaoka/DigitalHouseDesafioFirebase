@@ -36,14 +36,14 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
                 app:boxBackgroundColor="@color/white"
-                app:hintTextColor="@color/verde_inputs"
+                app:hintTextColor="@color/cinza_hints"
                 android:textColorHint="@color/cinza_hints">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/preto_input" />
+                    android:textColor="@color/verde_inputs" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,14 +52,14 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/inputEmail"
                 app:boxBackgroundColor="@color/white"
-                app:hintTextColor="@color/verde_inputs"
+                app:hintTextColor="@color/cinza_hints"
                 android:textColorHint="@color/cinza_hints">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/preto_input" />
+                    android:textColor="@color/verde_inputs" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,14 +68,14 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/inputPassword"
                 app:boxBackgroundColor="@color/white"
-                app:hintTextColor="@color/verde_inputs"
+                app:hintTextColor="@color/cinza_hints"
                 android:textColorHint="@color/cinza_hints">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/preto_input"
+                    android:textColor="@color/verde_inputs"
                     android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -85,14 +85,14 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/repeate_password"
                 app:boxBackgroundColor="@color/white"
-                app:hintTextColor="@color/verde_inputs"
+                app:hintTextColor="@color/cinza_hints"
                 android:textColorHint="@color/cinza_hints">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputRepeatPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/preto_input"
+                    android:textColor="@color/verde_inputs"
                     android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
