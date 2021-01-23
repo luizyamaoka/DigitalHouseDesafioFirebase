@@ -13,4 +13,5 @@
     <color name="preto_input">#47525E</color>
     <color name="azul_auxiliar">#00A6FF</color>
     <color name="cinza_hints">#8492A6</color>
+    <color name="verde_status_bar">#00796B</color>
 </resources>
