@@ -9,4 +9,5 @@
     <string name="create_account">Create Account</string>
     <string name="name">Name</string>
     <string name="search_games">Search Games</string>
+    <string name="lancamento">Lancamento:</string>
 </resources>

@@ -1,5 +1,6 @@
 package br.com.digitalhouse.desafiofirebase.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -22,6 +23,11 @@ class HomeActivity : AppCompatActivity() {
 
         rvGames.adapter = gameAdapter
         rvGames.layoutManager = layoutManager
+
+        floatingActionButton.setOnClickListener {
+            val intent = Intent(this, NewGameActivity::class.java)
+            startActivity(intent)
+        }
 
         gameViewModel.games.observe(this, Observer {
             gameAdapter.addGames(it)
