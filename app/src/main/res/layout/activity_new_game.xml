@@ -18,10 +18,13 @@
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
         app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="20dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,9 +39,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
+                android:textColorHint="@color/cinza_hints"
                 app:boxBackgroundColor="@color/white"
-                app:hintTextColor="@color/cinza_hints"
-                android:textColorHint="@color/cinza_hints">
+                app:hintTextColor="@color/cinza_hints">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputName"
@@ -52,9 +55,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/created_at"
+                android:textColorHint="@color/cinza_hints"
                 app:boxBackgroundColor="@color/white"
-                app:hintTextColor="@color/cinza_hints"
-                android:textColorHint="@color/cinza_hints">
+                app:hintTextColor="@color/cinza_hints">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputAno"
@@ -68,9 +71,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/description"
+                android:textColorHint="@color/cinza_hints"
                 app:boxBackgroundColor="@color/white"
-                app:hintTextColor="@color/cinza_hints"
-                android:textColorHint="@color/cinza_hints">
+                app:hintTextColor="@color/cinza_hints">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputDescricao"
@@ -86,8 +89,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Save Game"
-                android:backgroundTint="@color/vermelho"/>
+                android:backgroundTint="@color/vermelho"
+                android:text="Save Game" />
 
         </LinearLayout>
 
@@ -104,6 +107,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_photo_camera_24"
-        android:tint="@color/white"/>
+        android:tint="@color/white"
+        app:tint="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,10 +38,10 @@ class GameAdapter() : RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
         holder.tvGameName.text = game.name
         holder.tvGameAno.text = game.ano
 
-        holder.ivImage.setImageResource(R.drawable.splash)
-//        Glide.with(holder.ivImage.context).asBitmap()
-//            .load(game.image)
-//            .into(holder.ivImage)
+//        holder.ivImage.setImageResource(R.drawable.splash)
+        Glide.with(holder.ivImage.context).asBitmap()
+            .load(game.image)
+            .into(holder.ivImage)
 
         holder.cardView.setOnClickListener {
             val intent = Intent(it.context, GameActivity::class.java)

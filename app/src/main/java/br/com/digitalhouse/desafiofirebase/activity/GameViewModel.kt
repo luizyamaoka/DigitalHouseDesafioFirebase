@@ -27,7 +27,7 @@ class GameViewModel() : ViewModel() {
                             val game = Game(
                                 document.data["nome"] as String,
                                 document.data["ano"] as String,
-                                document.data["img"] as String,
+                                document.data["image"] as String,
                                 document.data["descricao"] as String)
                             gamesList.add(game)
                         }

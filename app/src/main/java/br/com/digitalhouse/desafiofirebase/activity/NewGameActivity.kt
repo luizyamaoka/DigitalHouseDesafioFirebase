@@ -75,13 +75,13 @@ class NewGameActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-
+0
         if (requestCode == CODE_IMG) {
             alertDialog.show()
             val uploadTask = storageReference.putFile(data!!.data!!)
             uploadTask.continueWithTask { task ->
                 if (task.isSuccessful) {
-                    Toast.makeText(this, "Chegando", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Imagem carregada", Toast.LENGTH_SHORT).show()
                 }
                 storageReference!!.downloadUrl
             }.addOnCompleteListener { task ->
