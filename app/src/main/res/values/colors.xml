@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="vermelho">#FF5252</color>
+    <color name="verde_inputs">#009688</color>
+    <color name="preto_input">#47525E</color>
+    <color name="azul_auxiliar">#00A6FF</color>
+    <color name="cinza_hints">#8492A6</color>
 </resources>
