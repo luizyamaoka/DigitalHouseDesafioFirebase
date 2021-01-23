@@ -1,4 +1,4 @@
-package br.com.digitalhouse.desafiofirebae
+package br.com.digitalhouse.desafiofirebase
 
 import org.junit.Test
 

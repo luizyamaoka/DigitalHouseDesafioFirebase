@@ -1,4 +1,4 @@
-package br.com.digitalhouse.desafiofirebae
+package br.com.digitalhouse.desafiofirebase
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
